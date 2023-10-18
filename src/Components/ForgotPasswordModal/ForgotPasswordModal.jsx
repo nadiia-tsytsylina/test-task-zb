@@ -50,7 +50,7 @@ export default function ForgotPasswordModal({ onClose }) {
     } else if (!authError && isPasswordReseted) {
       setShowErrorMessage(false);
       setShowSuccessMessage(true);
-      setTimeout(() => onClose(), 2000);
+      setTimeout(() => onClose(), 4000);
     }
   }, [authError, isPasswordReseted, onClose]);
 
